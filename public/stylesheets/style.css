@@ -1,8 +1,64 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito', sans-serif; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
 
 a {
   color: #00B7FF; }
+
+.main {
+  background: #5773ff;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+  padding: 20px;
+  margin-top: 70px; }
+
+.weather {
+  display: flex;
+  justify-content: space-around; }
+
+.now {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px; }
+
+.search {
+  display: flex;
+  justify-content: center; }
+
+.right-side {
+  font-size: 32px;
+  font-weight: bold;
+  display: flex;
+  align-items: center; }
+
+.max, .min {
+  display: inline-flex;
+  width: 100px;
+  justify-content: center; }
+
+.min {
+  margin-right: 10px; }
+
+.max {
+  text-align: right; }
+
+.input-style {
+  padding: 5px 5px 5px 10px;
+  border-radius: 5px;
+  margin: 15px 0 15px 15px;
+  font-size: 16px;
+  border: none; }
+
+.title {
+  text-align: center;
+  margin-top: 20px; }
 
 /*# sourceMappingURL=style.css.map */

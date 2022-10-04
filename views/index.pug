@@ -1,5 +1,31 @@
 extends layout
-
 block content
-  h1= title
-  p Welcome to #{title}
+  .title
+    h1= title
+    p Welcome to #{title}
+  .main
+    .weather
+      .left-side
+        h1 #{city}
+        - var img = "/images/" + icon + '.svg'
+        img(style='width: 200px' src=img)
+        h2 #{description}
+      .right-side
+        if main
+          ul
+            .temp
+              each val, key in main
+                if key == 'now'
+                  .now
+                    p= val + '°'
+                else
+                  div(class=key)
+                    p= key + ' ' + val + '°'
+    .search
+      form()
+        input().input-style
+        button(type='submit' style='padding: 5px' id='submit') Search
+      
+  
+      
+        
